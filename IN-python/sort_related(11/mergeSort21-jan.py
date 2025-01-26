@@ -39,11 +39,11 @@ def merge(a,b):
             res[k] = b[j]
             j+=1
         k+=1
-    while i<len(a):
+    while i<len(a):   #this steps is for remaining elements in array a
         res[k] = a[i]
         i+=1
         k+=1
-    while j<len(b):
+    while j<len(b): #this steps is for remaining elements in array b
         res[k] = b[j]
         j+=1
         k+=1
