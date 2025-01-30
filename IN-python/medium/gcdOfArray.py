@@ -22,6 +22,12 @@
 # 2 <= n <= 103
 # 1 <= nums[i] <= 103
 
+
+        # Helper function to compute the greatest common divisor (GCD)
+def gcd(x, y):
+    while y:
+        x, y = y, x % y
+        return x
 def gcdNum(arr):
     smallest = min(arr)
     greatest = max(arr)
