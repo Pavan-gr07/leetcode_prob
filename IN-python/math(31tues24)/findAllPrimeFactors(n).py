@@ -19,6 +19,8 @@
 
 def primeFactors(n):
     arr = []
+
+    # for even 2 
     while n % 2==0:
         arr.append(2)
         n = n // 2

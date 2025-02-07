@@ -41,7 +41,8 @@ def searchInRottedSorted(arr,target):
 # TC-O(len(arr)) -O(n)
 
 # Reducing to log(n)
-# Since the array is **sorted but rotated**, you can use **binary search** to reduce the time complexity to **\(O(\log n)\)** instead of \(O(n)\). The key idea is to identify the **pivot point** (the rotation index) while performing binary search. 
+# Since the array is **sorted but rotated**, you can use **binary search** to reduce the time complexity to **\(O(\log n)\)** instead of \(O(n)\).
+#  The key idea is to identify the **pivot point** (the rotation index) while performing binary search. 
 
 # ### Optimized \(O(\log n)\) Binary Search Approach:
 # ```python
@@ -88,4 +89,4 @@ def search(nums, target) :
 
 # This approach is much more efficient than a linear search and works optimally for rotated sorted arrays. 🚀
 
-print(searchInRottedSorted([4,5,6,7,0,1,2],3))
+print(search( [4,5,6,7,0,1,2],0))
