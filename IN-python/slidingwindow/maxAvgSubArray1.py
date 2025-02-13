@@ -20,6 +20,7 @@
 
 def maxAvgSubArray(arr,k):
     curr_sum = sum(arr[:k])
+    print(curr_sum)
     max_sum = curr_sum
 
     for i in range(k,len(arr)):
@@ -27,3 +28,5 @@ def maxAvgSubArray(arr,k):
         max_sum = max(curr_sum,max_sum)
 
     return max_sum/k
+
+print(maxAvgSubArray([1,12,-5,-6,50,3],4))
