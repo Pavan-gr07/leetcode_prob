@@ -62,7 +62,6 @@ def slidingWindowMax1(arr,k):
         # Start adding max elements to ans once we have at least k elements processed
         if i >= k - 1:
             ans.append(arr[dq[0]])  # Front of the deque is the max of this window
-
     return ans
 
 def slidingWindowMax2(arr,k):
@@ -76,7 +75,7 @@ def slidingWindowMax2(arr,k):
         que.append(end)
         if que[0] < start:
             que.popleft()
-        if end - start +1 >= k:
+        if end - start + 1 >= k:
             ans.append(arr[que[0]])
             start += 1
         end += 1
