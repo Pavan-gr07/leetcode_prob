@@ -81,33 +81,46 @@ def letterCombinationPhoneNo(str):
 
 # TC - O(4^N)
 # from typing import List
-
-# class Solution:
-#     def letterCombinations(self, digits: str) -> List[str]:
-#         if not digits:
-#             return []
+def letterCombinations( digits) :
+        if not digits:
+            return []
         
-#         digit_to_chars = {
-#             "2": "abc", "3": "def", "4": "ghi",
-#             "5": "jkl", "6": "mno", "7": "pqrs",
-#             "8": "tuv", "9": "wxyz"
-#         }
+        digit_to_chars = {
+            "2": "abc", "3": "def", "4": "ghi",
+            "5": "jkl", "6": "mno", "7": "pqrs",
+            "8": "tuv", "9": "wxyz"
+        }
         
-#         ans = []
+        ans = []
 
-#         def backtrack(index, path):
-#             if index == len(digits):
-#                 ans.append("".join(path))
-#                 return
+        def backtrack(index, path):
+            if index == len(digits):
+                ans.append("".join(path))
+                return
             
-#             for char in digit_to_chars[digits[index]]:
-#                 path.append(char)
-#                 backtrack(index + 1, path)
-#                 path.pop()  # Backtrack step
+            for char in digit_to_chars[digits[index]]:
+                path.append(char)
+                backtrack(index + 1, path)
+                path.pop()  # Backtrack step
         
-#         backtrack(0, [])
-#         return ans
+        backtrack(0, [])
+        return ans
 
 
 """ efficient method is backtracking approach"""
-print(letterCombinationPhoneNo("456"))
+print(letterCombinations("23"))
+
+
+# "" (start)
+# ├── "a"
+# │   ├── "ad"
+# │   ├── "ae"
+# │   ├── "af"
+# ├── "b"
+# │   ├── "bd"
+# │   ├── "be"
+# │   ├── "bf"
+# └── "c"
+#     ├── "cd"
+#     ├── "ce"
+#     ├── "cf"
