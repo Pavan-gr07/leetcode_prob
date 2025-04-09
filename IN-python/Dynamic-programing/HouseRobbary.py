@@ -28,18 +28,16 @@
 # 1 <= nums.length <= 100
 # 0 <= nums[i] <= 400
 
-
-class Solution:
-    def rob(self, nums: List[int]) -> int:
-        def solve(nums,idx,dp):
-            if idx >= len(nums):
-                return 0
-            if dp[idx] != -1:
-                return dp[idx]
-            dp[idx] = max(solve(nums,idx+1,dp),nums[idx]+solve(nums,idx+2,dp))
+def rob(nums) :
+    def solve(nums,idx,dp):
+        if idx >= len(nums):
+            return 0
+        if dp[idx] != -1:
             return dp[idx]
-        n = len(nums)+1
-        dp = [-1] * n
-        return solve(nums,0,dp)
+        dp[idx] = max(solve(nums,idx+1,dp),nums[idx]+solve(nums,idx+2,dp))
+        return dp[idx]
+    n = len(nums)+1
+    dp = [-1] * n
+    return solve(nums,0,dp)
 
-        
+print(rob([1,2,3,1]))
