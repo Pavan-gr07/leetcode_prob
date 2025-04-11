@@ -21,7 +21,7 @@ class Solution:
 
         return result
 
-if __name__ == "__main__":
+if __name__ == "__main__":  
     root = TreeNode(3)
     root.left = TreeNode(9)
     root.right = TreeNode(20)
