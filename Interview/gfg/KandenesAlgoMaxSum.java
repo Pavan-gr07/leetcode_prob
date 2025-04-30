@@ -1,4 +1,4 @@
-package Interview;
+package Interview.gfg;
 
 public class KandenesAlgoMaxSum {
 

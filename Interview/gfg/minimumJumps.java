@@ -1,4 +1,4 @@
-package Interview;
+package Interview.gfg;
 
 public class minimumJumps {
     public static int minJumps(int[] arr) {
