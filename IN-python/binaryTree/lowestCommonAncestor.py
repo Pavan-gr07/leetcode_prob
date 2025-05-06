@@ -36,15 +36,15 @@ class Solution():
             return root
     
 if __name__ == "__main__":
-    root = TreeNode(3)
-    root.left = TreeNode(5)
-    root.right = TreeNode(1)
-    root.left.left = TreeNode(6)
-    root.left.right = TreeNode(2)
-    root.left.right.left = TreeNode(7)
-    root.left.right.right = TreeNode(4)
-    root.right.right = TreeNode(8)
-    root.right.left = TreeNode(0)
+    root = TreeNode(6)
+    root.left = TreeNode(2)
+    root.right = TreeNode(8)
+    root.left.left = TreeNode(0)
+    root.left.right = TreeNode(4)
+    root.left.right.left = TreeNode(3)
+    root.left.right.right = TreeNode(5)
+    root.right.right = TreeNode(9)
+    root.right.left = TreeNode(7)
 
     sy = Solution()
     print(sy.lowestCommonAncestor(root, root.right.left, root.right.right))
