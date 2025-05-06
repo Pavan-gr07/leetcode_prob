@@ -29,7 +29,7 @@
 
 def mergeIntervals(arr):
     arr.sort(key=lambda x:x[0])
-m
+
     merged = [arr[0]]
     for ele in arr[1:]:
         last = ele[1]
