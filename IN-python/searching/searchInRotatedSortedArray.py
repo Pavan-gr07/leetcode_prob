@@ -4,7 +4,11 @@
 # Companies
 # There is an integer array nums sorted in ascending order (with distinct values).
 
-# Prior to being passed to your function, nums is possibly rotated at an unknown pivot index k (1 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2].
+# Prior to being passed to your function, nums is possibly rotated at an unknown pivot index 
+# k (1 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., 
+# nums[n-1], nums[0], nums[1], ..., nums[k-1]] 
+# (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become 
+# [4,5,6,7,0,1,2].
 
 # Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.
 
@@ -41,7 +45,8 @@ def searchInRottedSorted(arr,target):
 # TC-O(len(arr)) -O(n)
 
 # Reducing to log(n)
-# Since the array is **sorted but rotated**, you can use **binary search** to reduce the time complexity to **\(O(\log n)\)** instead of \(O(n)\).
+# Since the array is **sorted but rotated**, you can use **binary search** to reduce the time complexity
+#  to **\(O(\log n)\)** instead of \(O(n)\).
 #  The key idea is to identify the **pivot point** (the rotation index) while performing binary search. 
 
 # ### Optimized \(O(\log n)\) Binary Search Approach:
@@ -74,7 +79,8 @@ def search(nums, target) :
 # ```
 
 # ### Explanation:
-# 1. **Binary Search**: The algorithm maintains `left` and `right` pointers and repeatedly halves the 
+# 1. **Binary Search**: The algorithm maintains `left` and `right` pointers and repeatedly
+#  halves the 
 # search space.
 # 2. **Check which half is sorted**:
 #    - If `nums[left] <= nums[mid]`, it means the **left half** is sorted.
@@ -87,6 +93,7 @@ def search(nums, target) :
 # ### Time Complexity:
 # - **\(O(\log n)\)** since we eliminate half of the array in each step.
 
-# This approach is much more efficient than a linear search and works optimally for rotated sorted arrays. 🚀
+# This approach is much more efficient than a linear search and works optimally for rotated 
+# sorted arrays. 🚀
 
 print(search( [4,5,6,7,0,1,2],0))
