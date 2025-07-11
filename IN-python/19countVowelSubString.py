@@ -1,4 +1,4 @@
-# 2062. Count Vowel Substrings of a String
+#   . Count Vowel Substrings of a String
 # Easy
 # Topics
 # Companies
@@ -79,6 +79,8 @@ def check(arr):
     return True
 
 
+# TC - O(n^2)
+# SC - O(n)
 
 print(countVowelSubString("aeiouu"))
 

@@ -34,4 +34,4 @@ def find_factors(n):
                 factors.append(n // i)  # Add the corresponding factor
     return sorted(factors)
 
-print(find_factors(15))
+print(find_factors(315))
