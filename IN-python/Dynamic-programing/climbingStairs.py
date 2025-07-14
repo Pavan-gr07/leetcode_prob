@@ -26,6 +26,14 @@
 # 2. 1 step + 2 steps
 # 3. 2 steps + 1 step
  
+def climbStairs(n):
+    if n<=2:
+        return n
+    
+    a,b = 1,2
+    for _ in range(3,n+1):
+        a,b = b,a+b
+    return b
 
 
 def climbStairs(n): 

@@ -44,12 +44,6 @@
 
 
 
-
-
-
-
-
-
 def countVowelSubString(str):
     count = 0
     length = len(str)
