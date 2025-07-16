@@ -8,4 +8,4 @@ def commonPrefix(strs):
 
 print(commonPrefix( ["ab", "a"]))
 
-    
+print(commonPrefix(["dog", "racecar", "car"]))
