@@ -1,11 +1,11 @@
-def commonPrefix(s):
-    if len(s) <= 0:
-        return ""
+def commonPrefix(strs):
+    ans = ""
+    for i in range(len(strs[0])):
+        for j in range(1,len(strs)):
+            if i >= len(strs[j]) or strs[0][i] != strs[j][i]:
+                return strs[0][:i]
+    return strs[0]
 
-    for i in range(len(s[0])):
-        for j in range(1, len(s)):
-            if i >= len(s[j]) or s[0][i] != s[j][i]:
-                return s[0][:i]
-    return s[0]
+print(commonPrefix( ["ab", "a"]))
 
 print(commonPrefix(["dog", "racecar", "car"]))

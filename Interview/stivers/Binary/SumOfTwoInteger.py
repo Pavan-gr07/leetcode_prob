@@ -40,4 +40,4 @@ def SumOfInteger1(a,b):
 
 
 
-print(SumOfInteger1(3,2))
+print(SumOfInteger(2,3))
