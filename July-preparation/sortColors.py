@@ -25,12 +25,12 @@
 
 # Bubble Sort
 def bubbleSort(arr):
-    for j in range(len(arr)):
-        for i in range(len(arr)-j-1):
-            if i < len(arr)-1 and arr[i] > arr[i+1]:
-                [a,b] = swap1(arr[i] , arr[i+1])
-                arr[i] = a
-                arr[i+1] = b
+    for i in range(len(arr)):
+        for j in range(len(arr)-i-1):
+            if j < len(arr)-1 and arr[j] > arr[j+1]:
+                [a,b] = swap1(arr[j] , arr[j+1])
+                arr[j] = a
+                arr[j+1] = b
     return arr
 
 def swap1(a,b):

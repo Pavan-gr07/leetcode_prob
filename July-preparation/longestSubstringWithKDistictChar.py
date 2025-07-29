@@ -17,7 +17,7 @@
 # Explanation: The entire string "aabaaab" has exactly 2 unique characters 'a' and 'b', making it the longest valid substring.
 # Constraints:
 
-
+# sliding window
 def longestKSubstr(self, s, k):
         # code here
         max_len = -1
