@@ -33,7 +33,7 @@ def SumOfInteger1(a,b):
 
     while b != 0:
         carry = (a & b) & MASK
-        a = (a ^ b) & MASK
+        a = (a ^ b) 
         b = (carry << 1) & MASK
 
     return a if a <= MAX_INT else ~(a ^ MASK)
