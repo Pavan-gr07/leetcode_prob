@@ -17,3 +17,4 @@ def dailyTemparature(num2):
     return ans
     
 print(dailyTemparature([73,74,75,71,69,72,76,73]))
+
