@@ -78,4 +78,4 @@ def minWindowSubString(s,t):
         
 
 
-print(minWindowSubString("aa","aa"))
+print(minWindowSubString("ADOBECODEBANC","ABC"))
