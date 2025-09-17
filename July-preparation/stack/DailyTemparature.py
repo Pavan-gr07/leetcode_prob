@@ -29,21 +29,6 @@
 # 30 <= temperatures[i] <= 100
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def dailyTemparature(num2): 
     stack = [] 
     length = len(num2) 
