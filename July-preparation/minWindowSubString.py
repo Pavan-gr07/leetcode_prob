@@ -75,7 +75,11 @@ def minWindowSubString(s,t):
 
 
 
-        
+x = 0
+for i in range(1, 6):
+    x = x + i*i
+print(x)
 
 
-print(minWindowSubString("aa","aa"))
+
+print(minWindowSubString("ADOBECODEBANC","ABC"))
