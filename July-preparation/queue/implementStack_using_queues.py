@@ -31,3 +31,12 @@ class StackUsingQueues:
 
     def display(self):
         return list(self.q1)
+
+stack = StackUsingQueues()
+stack.push(-2)
+stack.push(0)
+stack.push(-3)
+stack.top()
+stack.pop()
+stack.top()
+stack.top()
