@@ -1,0 +1,93 @@
+# Perfect 👍 let’s compare **Queue using Array** vs **Queue using Linked List**.
+
+# ---
+
+# ## **1. Queue using Array (Python List)**
+
+# 👉 Simple but inefficient for `pop(0)` because it shifts all elements.
+
+# ```python
+# class ArrayQueue:
+#     def __init__(self):
+#         self.queue = []
+
+#     def enqueue(self, item):
+#         self.queue.append(item)   # add at end
+
+#     def dequeue(self):
+#         if not self.is_empty():
+#             return self.queue.pop(0)  # remove from front
+#         return "Queue is Empty"
+
+#     def is_empty(self):
+#         return len(self.queue) == 0
+
+#     def peek(self):
+#         if not self.is_empty():
+#             return self.queue[0]   # front element
+#         return None
+
+#     def display(self):
+#         return self.queue
+# ```
+
+# ✅ Easy to implement
+# ❌ `dequeue` is **O(n)**
+
+# ---
+
+# ## **2. Queue using Linked List**
+
+# 👉 Efficient — enqueue and dequeue are **O(1)**.
+
+# ```python
+# class Node:
+#     def __init__(self, data):
+#         self.data = data
+#         self.next = None
+
+# class LinkedListQueue:
+#     def __init__(self):
+#         self.front = self.rear = None
+
+#     def enqueue(self, item):
+#         new_node = Node(item)
+#         if self.rear is None:  # empty queue
+#             self.front = self.rear = new_node
+#             return
+#         self.rear.next = new_node
+#         self.rear = new_node
+
+#     def dequeue(self):
+#         if self.front is None:  # empty queue
+#             return "Queue is Empty"
+#         temp = self.front
+#         self.front = temp.next
+#         if self.front is None:  # if queue becomes empty
+#             self.rear = None
+#         return temp.data
+
+#     def peek(self):
+#         if self.front:
+#             return self.front.data
+#         return None
+
+#     def is_empty(self):
+#         return self.front is None
+# ```
+
+# ✅ Both `enqueue` and `dequeue` are **O(1)**
+# ✅ No shifting needed
+# ❌ Slightly more code because we need to manage nodes
+
+# ---
+
+# 📌 **Key takeaway**:
+
+# * **Array-based Queue** → simpler, but inefficient for many dequeues.
+# * **Linked List Queue** → efficient, used when we expect a lot of enqueue/dequeue.
+# * In **real-world Python**, we mostly use `collections.deque` (already optimized).
+
+# ---
+
+# Do you want me to also show you how **Circular Queue** works (so the array queue becomes efficient without shifting)?

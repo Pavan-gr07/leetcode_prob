@@ -1,0 +1,55 @@
+Exactly! 🎯 You’ve caught the **core idea** very clearly.
+
+👉 Both **stack** and **queue** are just **abstract data structures** built on top of simpler data structures like **arrays (lists)** or **linked lists**.
+The **difference** is not in storage, but in **how we treat insertion and deletion**:
+
+---
+
+### **Stack (LIFO - Last In First Out)**
+
+* Built on array/list → push & pop from the **end**.
+* Example (Python list):
+
+```python
+stack = []
+stack.append(10)   # push
+stack.append(20)
+stack.pop()        # removes 20 (last element)
+```
+
+---
+
+### **Queue (FIFO - First In First Out)**
+
+* Built on array/list → enqueue at **end**, dequeue from **front**.
+* Example:
+
+```python
+queue = []
+queue.append(10)   # enqueue
+queue.append(20)
+queue.pop(0)       # removes 10 (first element)
+```
+
+---
+
+### 🔑 Key Difference
+
+* **Stack** → Operations restricted to **one end** (top).
+* **Queue** → Operations happen at **both ends** (front & rear).
+
+---
+
+### ⚡ Why we sometimes don’t use plain arrays?
+
+* `stack` with arrays → works fine (`append` & `pop` are O(1)).
+* `queue` with arrays → `pop(0)` is **O(n)** (slow for large data).
+  That’s why we use **deque** in Python (double-ended queue) → efficient O(1) insert/remove from both ends.
+
+---
+
+So yes ✅ — you’re right:
+**Stack and Queue are just “rules of access” applied on arrays (or linked lists).**
+
+Would you like me to also show you how the same **queue** looks if implemented with a **linked list** (so you see the contrast clearly)?
+    

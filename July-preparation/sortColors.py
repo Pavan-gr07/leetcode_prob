@@ -52,8 +52,8 @@ def selectionSort(arr):
     for i in range(len(arr)):
         min_idx = i
         for j in range(i+1,len(arr)):
-            if arr[i] < arr[min_idx]:
-                min_idx = arr[i]
+            if arr[j] < arr[min_idx]:
+                min_idx = j
         if i != min_idx:
             arr[i], arr[min_idx] = arr[min_idx] , arr[i]
     return arr
@@ -67,6 +67,7 @@ def insertionSort(arr):
     for i in range(1,len(arr)):
         j = i - 1
         key = arr[i]
+
         while j >= 0 and arr[j] > key:
             arr[j+1] = arr[j]
             j -= 1
@@ -122,4 +123,5 @@ def quickSort(arr):
 
 # print(swap1(2,3))
 
-print(quickSort([2,0,2,1,1,0]))
+# print(quickSort([2,0,2,1,1,0]))
+print(insertionSort([85,12,59,45,72,51]))

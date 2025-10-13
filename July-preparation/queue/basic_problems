@@ -1,0 +1,51 @@
+Perfect! 🚀 Let’s practice **Queue problems** step by step.
+
+### Easy Queue Problems
+
+1. **Implement Queue using Array**
+
+   * Functions: `enqueue(x)`, `dequeue()`, `front()`, `isEmpty()`, `isFull()`
+
+2. **Implement Queue using Linked List**
+
+   * Same functions as above, but using nodes instead of array.
+
+3. **Implement Circular Queue**
+
+   * Handle case when rear reaches the end of array but space is available at the front.
+
+---
+
+### Medium Queue Problems
+
+4. **Reverse a Queue**
+
+   * Input: `1 2 3 4 5`
+   * Output: `5 4 3 2 1`
+
+5. **Generate Binary Numbers from 1 to N using Queue**
+
+   * Input: `N = 5`
+   * Output: `1 10 11 100 101`
+
+6. **First Unique Character in a Stream** (sliding window style)
+
+   * Input: stream = `"aabc"`
+   * Output: `a -1 b b`
+   * Explanation: keep track of first non-repeating character using a queue.
+
+---
+
+### Hard Queue Problems
+
+7. **Implement Stack using Queues**
+
+   * Classic trick question.
+
+8. **Rotten Oranges Problem (BFS with Queue)**
+
+   * Grid problem where fresh oranges rot if adjacent to rotten ones (level-order traversal).
+
+---
+
+👉 Do you want me to **start with basic implementation** (array-based queue) or **jump directly to problem-solving** like reversing a queue?
