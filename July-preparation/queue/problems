@@ -1,0 +1,59 @@
+Perfect 💪 — here’s a **well-structured list** of **Queue problems**, starting from **basic → intermediate → advanced** so you can go level by level.
+
+---
+
+## 🟢 **Basic Queue Problems**
+
+These help you master the fundamentals.
+
+1. **Implement a Queue using an Array / List** ✅ (you already did this)
+2. **Implement a Queue using Two Stacks**
+3. **Implement a Stack using Two Queues**
+4. **Implement a Circular Queue**
+5. **Reverse a Queue**
+   👉 (Example: input `[1,2,3,4,5]` → output `[5,4,3,2,1]`)
+6. **Find the first non-repeating character in a stream using a Queue**
+7. **Generate Binary Numbers from 1 to N using a Queue**
+   👉 Example: input `N = 5` → output `['1','10','11','100','101']`
+
+---
+
+## 🟡 **Intermediate Queue Problems**
+
+These introduce algorithmic thinking.
+8. **Interleave the first half and second half of a queue**
+Example: `[1,2,3,4,5,6] → [1,4,2,5,3,6]`
+9. **Implement a Deque (Double-ended Queue)**
+10. **Implement a Priority Queue (Min / Max)**
+11. **Level Order Traversal of a Binary Tree** (Uses Queue for BFS)
+12. **Reverse First K Elements of a Queue**
+13. **Check if all leaves are at the same level in a Binary Tree** (BFS Queue based)
+14. **Distance of nearest 1 in a binary matrix** (Queue + BFS)
+
+---
+
+## 🔵 **Advanced Queue Problems**
+
+These mix Queues with other DSA concepts (BFS, Heap, etc.)
+15. **LRU Cache using Deque and HashMap**
+16. **Sliding Window Maximum (Monotonic Queue)**
+17. **Rotten Oranges Problem (Multi-source BFS)**
+18. **Shortest Path in an Unweighted Graph (using BFS Queue)**
+19. **Course Schedule (Topological Sort using Queue)**
+20. **Design Hit Counter / Moving Average (Queue + Sliding Window)**
+21. **First Negative Integer in Every Window of Size K**
+22. **Circular Tour / Gas Station Problem**
+23. **Maximum of all subarrays of size K (Queue Optimized)**
+
+---
+
+## 🏁 Recommended Flow to Follow:
+
+1️⃣ Start with: **Reverse a Queue**
+2️⃣ Then: **Implement Queue using Two Stacks**
+3️⃣ Then: **Reverse First K Elements**
+4️⃣ Then: **Sliding Window Maximum**
+
+---
+
+Would you like me to give you the **first problem ("Reverse a Queue")** now and guide you with hint-based approach (so you code it yourself)?
