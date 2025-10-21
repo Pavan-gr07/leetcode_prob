@@ -24,6 +24,7 @@ These introduce algorithmic thinking.
 8. **Interleave the first half and second half of a queue**
 Example: `[1,2,3,4,5,6] → [1,4,2,5,3,6]`
 9. **Implement a Deque (Double-ended Queue)**
+
 10. **Implement a Priority Queue (Min / Max)**
 11. **Level Order Traversal of a Binary Tree** (Uses Queue for BFS)
 12. **Reverse First K Elements of a Queue**
