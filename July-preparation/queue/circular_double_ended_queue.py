@@ -73,7 +73,7 @@ class MyCircularDeque:
             return False
         
         if self.isEmpty():
-            self.rear = self.rear = 0
+            self.rear = self.front = 0
         else:
             self.rear = (self.rear + 1) % self.k
         self.queue[self.rear] = value
