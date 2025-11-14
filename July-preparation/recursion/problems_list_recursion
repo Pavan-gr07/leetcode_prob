@@ -23,7 +23,18 @@ Learn how recursion *works* (base case, recursive calls, stack flow).
 | 4 | Fibonacci series (recursive)                          | Overlapping subproblems    | Amazon           |
 | 5 | Reverse a string / array recursively                  | Recursion on indices       | Google, Flipkart |
 | 6 | Check palindrome string recursively                   | Two-pointer recursion      | Zoho             |
-| 7 | Find maximum element in array recursively             | Divide into smaller arrays | HCL              |
+| 7 | Find maximum element in array recursively             | Divide into smaller arrays | HCL 
+If you want, your next recursion problems can be:
+
+Reverse an array using recursion
+
+Check if a string is palindrome
+
+Sum of digits using recursion
+
+Count digits
+
+Print array in reverse order             |
 
 🎯 **Goal:** Be 100% comfortable tracing function calls and understanding the recursion stack.
 
