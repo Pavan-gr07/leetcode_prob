@@ -58,9 +58,8 @@ def fibdp(n, dp={}):
 def reverseString(s):
     if s == "":
         return ""
-    a = reverseString(s[1:])
-    b = s[0]
-    return a + b
+    
+    return reverseString(s[1:]) + s[0]
 
 
 def reverseString(s):
@@ -72,4 +71,18 @@ def reverseString(s):
         right -= 1
     return s
 
-print(reverseString(["h","e","l","l","o"]))
+
+def reverseAnArray(s):
+    if len(s) == 0:
+        return []
+    rest = reverseAnArray(s[1:])
+    rest.append(s[0])
+    return rest
+
+def reverse_array(arr, left, right):
+    if left >= right:
+        return
+    arr[left], arr[right] = arr[right], arr[left]
+    reverse_array(arr, left + 1, right - 1)
+
+print(reverseAnArray(["h","e","l","l","o"]))

@@ -25,7 +25,7 @@ def printTillN(n, curr=1):
     printTillN(n, curr + 1)
 
 
-
+# increasing order
 def printTillN1( N):
     #code here 
     if N == 0:
@@ -33,12 +33,26 @@ def printTillN1( N):
     printTillN1(N-1)
     print(N, end=" ")
 
-# printTillN1(4)
 
-def getNumbers(n):
-    if n == 0:
-        return []
-    return getNumbers(n-1) + [n]
 
-print(*getNumbers(5))
+# Decreasing order
+def printTillN1( N):
+    #code here 
+    if N == 0:
+        return 
+    
+    print(N, end=" ")
+    printTillN1(N-1)
+
+
+
+
+printTillN1(4)
+
+# def getNumbers(n):
+#     if n == 0:
+#         return []
+#     return getNumbers(n-1) + [n]
+
+# print(*getNumbers(5))
 
