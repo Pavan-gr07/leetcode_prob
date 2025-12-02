@@ -1,5 +1,5 @@
 def fact(n):
-    if n ==0:
+    if n == 0:
         return 1
     return n * fact(n - 1)
 
@@ -38,7 +38,6 @@ def fib(n):
 
 
 # Using DP
-
 def fibdp(n, dp={}):
     if n <= 1:
         return n

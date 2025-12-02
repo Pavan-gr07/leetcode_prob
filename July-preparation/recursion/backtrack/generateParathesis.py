@@ -25,6 +25,7 @@ def generateParathesis(n):
         if len(curr) == 2*n:
             result.append(curr)
             return 
+        
         if open_count < n:
             backtrack(curr+"(",open_count+1,close_count)
 
