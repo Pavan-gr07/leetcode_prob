@@ -44,4 +44,4 @@ def powerOfFour(n):
     return powerOfFour(n//4)
 
 
-print(powerOfFour(1))
+print(powerOfthree(27))
