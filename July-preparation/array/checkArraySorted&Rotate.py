@@ -36,7 +36,8 @@ def arraySortedRotated(arr):
     n = len(arr)
     count = 0
     for i in range(n):
-        if arr[i] > arr[(i+1)%n]:
+        k = (i+1)%n
+        if arr[i] > arr[k]:
             count +=1
             if count > 1:
                 return False
